@@ -1,0 +1,92 @@
+/* ///////////////////////// Мобильные устройства ///////////////////////// */
+@media screen and (max-width: 444px) and (orientation: portrait) {
+    .mainpage {
+        background-image: url(../img/mobilemainpage.svg);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: #FAF7F2;
+        display: flex;
+        overflow: hidden;
+    }
+    .book img{
+    cursor: grab;
+    pointer-events: auto; 
+    width: auto; 
+    height: 55vw; 
+    user-select: none;
+    position: absolute;
+    }
+    .h1 {
+        position: absolute;
+        margin-top: -71vw  ;
+        margin-right: 17vw;
+        font-family: helvetica;
+        font-size: 10vw;
+    }
+    .background{ 
+        display: none;
+    }
+    button#lockButton {
+        position: absolute;
+        margin-top: -21vw  ;
+        margin-right: 67vw;
+        width: 43vw;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:  #FAF7F2;
+        border-color: black;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+        z-index: 10;
+    }
+    
+}
+
+/* ///////////////////////// Планшеты ///////////////////////// */
+@media screen and (min-width: 445px) and (max-width: 1024px) and (orientation: portrait) {
+    .mainpage {
+        background-image: url(../img/tabletmainpage.svg);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: #FAF7F2;
+        display: flex;
+        overflow: hidden;
+    }
+    
+}
+
+
+/* ///////////////////////// Средние экраны ///////////////////////// */
+@media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: portrait) {
+    /* Вертикальная ориентация для экранов от 1025px до 1366px */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
+    /* Горизонтальная ориентация для экранов от 1025px до 1366px */
+}
+
+/* ///////////////////////// Большие экраны ///////////////////////// */
+@media screen and (min-width: 1367px) and (max-width: 1920px) and (orientation: portrait) {
+    /* Вертикальная ориентация для экранов от 1367px до 1920px */
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) and (orientation: landscape) {
+    /* Горизонтальная ориентация для экранов от 1367px до 1920px */
+}
+
+/* ///////////////////////// Очень большие экраны ///////////////////////// */
+@media screen and (min-width: 1921px) and (orientation: portrait) {
+    /* Вертикальная ориентация для экранов шире 1920px */
+}
+
+@media screen and (min-width: 1921px) and (orientation: landscape) {
+    /* Горизонтальная ориентация для экранов шире 1920px */
+}
+
+/* ///////////////////////// Ультра-HD экраны (4K и выше) ///////////////////////// */
+@media screen and (min-width: 2561px) {
+    /* Поддержка для ультра-HD экранов */
+}
